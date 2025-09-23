@@ -12,14 +12,23 @@ theme:
     - navigation.top
     - search.highlight
     - search.share
+    - toc.integrate
+
+    markdown_extensions:
+      - codehilite:
+          guess_lang: false
+      - admonition
+      - toc:
+          permalink: true
+    
     nav:
-    - Início: index.md
-    - Algoritmos:
-      - Regressão Linear: algoritmos/regressao_linear.md
-      - Regressão Logística: algoritmos/regressao_logistica.md
-      - Árvores de Decisão: algoritmos/arvores.md
-    - Estudos: estudos.md
-    - Sobre: sobre.md
+      - Início: index.md
+      - Algoritmos:
+          - Regressão Linear: algoritmos/regressao_linear.md
+          - Regressão Logística: algoritmos/regressao_logistica.md
+          - Árvores de Decisão: algoritmos/arvores.md
+      - Estudos: estudos.md
+      - Sobre: sobre.md
 
 plugins:
   - search
