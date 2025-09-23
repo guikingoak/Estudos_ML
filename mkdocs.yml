@@ -1,0 +1,27 @@
+site_name: Estudos de Machine Learning
+site_url: https://guikingoak.github.io/Estudos_ML/
+repo_url: https://github.com/guikingoak/Estudos_ML
+repo_name: guikingoak/Estudos_ML
+theme:
+  name: material
+  palette:
+    scheme: slate
+    features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+    nav:
+    - Início: index.md
+    - Algoritmos:
+      - Regressão Linear: algoritmos/regressao_linear.md
+      - Regressão Logística: algoritmos/regressao_logistica.md
+      - Árvores de Decisão: algoritmos/arvores.md
+    - Estudos: estudos.md
+    - Sobre: sobre.md
+
+plugins:
+  - search
+  - mkdocs-git-revision-date-localized-plugin
+  - mkdocs-material-extensions

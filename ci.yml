@@ -1,0 +1,32 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+env:
+  CI: true
+  PYTHON_VERSION: 3.12
+
+jobs:
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout do repositório
+      - uses: actions/checkout@v4
+
+      # Configura o Python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      # Instala dependências
+      - run: |
+          pip install -r requirements.txt
+
+      # Gera e publica o site no GitHub Pages
+      - run: |
+          mkdocs gh-deploy --force
