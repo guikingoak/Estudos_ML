@@ -23,13 +23,9 @@ theme:
     
     nav:
       - Início: index.md
-      - Algoritmos:
-          - Regressão Linear: algoritmos/regressao_linear.md
-          - Regressão Logística: algoritmos/regressao_logistica.md
-          - Árvores de Decisão: algoritmos/arvores.md
-      - Estudos: estudos.md
-      - Sobre: sobre.md
-
+      - Atividade KNN: atvknn.md
+      - Dados: ytktk.csv
+      - Código: atvknn.py
 plugins:
   - search
   - mkdocs-git-revision-date-localized-plugin
