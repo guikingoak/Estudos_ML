@@ -1,31 +1,28 @@
 site_name: Estudos de Machine Learning
 site_url: https://guikingoak.github.io/Estudos_ML/
-repo_url: https://github.com/guikingoak/Estudos_ML
-repo_name: guikingoak/Estudos_ML
+
 theme:
   name: material
-  palette:
-    scheme: slate
-    features:
-    - navigation.instant
-    - navigation.tabs
-    - navigation.top
-    - search.highlight
-    - search.share
-    - toc.integrate
+  language: pt
+  features:
+    - navigation.instant   
+    - toc.integrate        
+    - code-copy           
 
-    markdown_extensions:
-      - codehilite:
-          guess_lang: false
-      - admonition
-      - toc:
-          permalink: true
-    
-    nav:
-      - Início: index.md
-      - Atividade KNN: atvknn.md
-      - Dados: ytktk.csv
-      - Código: atvknn.py
+nav:
+  - Início: index.md
+  - Atividade KNN: atvknn.md
+  - Código KNN: atvknn.py
+  - Dados: ytktk.csv
+
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
+      linenums: true  
+  - admonition
+  - toc:
+      permalink: true
+
 plugins:
   - search
   - git-revision-date-localized:
